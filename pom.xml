@@ -151,7 +151,7 @@
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Activator>org.redquark.osgi.foundation.activators.Activator</Bundle-Activator>
-						<Multi-Bundle-Activator>org.redquark.osgi.foundation.activators.HelloWorldActivator,org.redquark.osgi.foundation.activators.BundleCounterActivator</Multi-Bundle-Activator>
+						<Multi-Bundle-Activator>org.redquark.osgi.foundation.activators.HelloWorldActivator,org.redquark.osgi.foundation.activators.BundleCounterActivator,org.redquark.osgi.foundation.activators.HeartbeatActivator</Multi-Bundle-Activator>
 						<Export-Package></Export-Package>
 						<Import-Package>org.osgi.*, javax.jcr.*, org.slf4j.*</Import-Package>
 						<_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
