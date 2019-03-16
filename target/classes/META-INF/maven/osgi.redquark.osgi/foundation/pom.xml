@@ -11,6 +11,11 @@
 	<packaging>bundle</packaging>
 	<name>Foundation OSGi Bundle</name>
 
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<dependencies>
 		<!-- OSGi Dependencies -->
 		<dependency>
@@ -145,8 +150,9 @@
 				<configuration>
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Activator>org.redquark.osgi.foundation.activators.Activator</Bundle-Activator>
+						<Multi-Bundle-Activator>org.redquark.osgi.foundation.activators.HelloWorldActivator,org.redquark.osgi.foundation.activators.BundleCounterActivator</Multi-Bundle-Activator>
 						<Export-Package></Export-Package>
-						<Bundle-Activator>org.redquark.osgi.foundation.basics.HelloWorldActivator</Bundle-Activator>
 						<Import-Package>org.osgi.*, javax.jcr.*, org.slf4j.*</Import-Package>
 						<_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
 						<_removeheaders>Ignore-Package,Include-Resource,Private-Package,Embed-Dependency</_removeheaders>

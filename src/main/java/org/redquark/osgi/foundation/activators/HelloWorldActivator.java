@@ -1,4 +1,4 @@
-package org.redquark.osgi.foundation.basics;
+package org.redquark.osgi.foundation.activators;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
